@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      header {
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url(a.jpg);
+        background-size: cover;
+        display: flex;
+        justify-content: space-around;
+      
+      }
+      nav {
+      width: 100%;
+      height: 80px;
+      /* background-color: white; */
+      color: black;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      }
+      .logo{
+        color: white;
+       font-size: 2em;
+      font-weight: bold;
+      }
+      .manu a{
+       margin-left: 20px;
+       text-decoration: none;
+       color: white;
+       position: relative;
+      }
+      /* .manu a::before{
+        content: "";
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background-color: indianred;
+      } */
+      .manu a:hover{
+        border-bottom: 2px;
+        border-bottom-color: indianred;
+      }
+      .btn a{
+        padding: 10px 30px ;
+        background-color: deeppink;
+        border-radius: 3px;
+        color: white;
+        text-decoration: none;
+      }
+    .header-txt{
+      max-width: 650px;
+      position: absolute;
+      top: 50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+      text-align: center;
+      color: white;
+    }
+    .header-txt span{
+      letter-spacing: 5px;
+    }
+    .header-txt h1{
+     font-size: 3em;
+     margin-bottom: 20px;
+    }
+    .header-txt a{
+      text-decoration: none;
+      background-color: deeppink;
+      color: white;
+      padding: 10px 30px;
+      border-radius: 3px;
+     
+    }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Travel Guider</div>
+        <div class="manu">
+          <a href="#">Home</a>
+          <a href="#">Hill Station</a>
+          <a href="#">Best Offers</a>
+          <a href="#">Our Sites</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="btn">
+         <a href="#"> Register</a>
+        </div>
+      </nav>
+      <section class="header-txt">
+        <span>Enjoy</span>
+        <h1>International Travel Agency</h1>
+        <br>
+        <a href="#">Book Your Trip</a>
+      </section>
+    </header>
+  </body>
+</html>
